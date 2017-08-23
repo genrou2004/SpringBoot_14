@@ -7,7 +7,7 @@
 <body>
 
 <div th:each="director : ${directors}">
-    <h2 th:if="${director.name}">  </h2>
+    <h2 th:text="${director.name}">  </h2>
     <h6 th:inline= "text" > Specializing in [[${director.genre}]] </h6>
     <ul>
         <th:block th:each="movie : ${director.movies}" >
